@@ -1,83 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SavvyFront - Legal Information</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">Savvy<span>Front</span></a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="differentiators.html">Why Us</a>
-                <a href="legal.html" class="active">Legal</a>
-                <a href="login.html">Login</a>
-            </nav>
-        </div>
-    </header>
+# SavvyFront Privacy Policy (Draft V1.0)
 
-    <main>
-        <div class="container" style="padding-top: 60px;">
-            <section style="max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                <h1 style="color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 20px; margin-bottom: 30px;">Legal Framework & Compliance</h1>
-                
-                <div style="background: #fff1f2; color: #9f1239; padding: 15px; border-radius: 6px; margin-bottom: 30px; border: 1px solid #fecdd3;">
-                    <strong>IMPORTANT:</strong> The documents below are structural outlines for planning purposes only. They must be reviewed and finalized by a qualified legal professional to ensure compliance with all relevant laws (especially GDPR/UK laws).
-                </div>
+**Effective Date:** [Date of Publication]
 
-                <!-- TOS Outline -->
-                <h2 style="font-size: 1.8rem; color: var(--primary);">Terms of Service (TOS) Outline</h2>
-                <ol style="padding-left: 20px; margin-bottom: 40px; color: var(--text-main);">
-                    <li style="margin-bottom: 10px;"><strong>1. Introduction & Acceptance:</strong> Agreement to these terms. Definition of Services (VPS Hosting on Proxmox/Ceph). Acceptable Use Policy (AUP).</li>
-                    <li style="margin-bottom: 10px;"><strong>2. Service Provision & Uptime:</strong> Description of the clustered architecture. Uptime Guarantee/SLA (Referencing Blesta). Limitations of Guarantees.</li>
-                    <li style="margin-bottom: 10px;"><strong>3. Billing, Payments, and Cancellations:</strong> Pricing structure. Payment terms. Cancellation policy.</li>
-                    <li style="margin-bottom: 10px;"><strong>4. Data Responsibility & Backups:</strong> Customer Responsibility. Backup Disclaimer (Ceph resilience vs. client backups).</li>
-                    <li style="margin-bottom: 10px;"><strong>5. Limitation of Liability & Indemnification.</strong></li>
-                    <li style="margin-bottom: 10px;"><strong>6. Termination of Service.</strong></li>
-                    <li style="margin-bottom: 10px;"><strong>7. Acceptable Use Policy (AUP) - INCORPORATED BY REFERENCE.</strong></li>
-                </ol>
+This Privacy Policy describes how SavvyFront ("We," "Us," or "Our") collects, uses, and discloses your information in connection with the use of our website and hosting Services (powered by Proxmox/Ceph).
 
-                <!-- Privacy Policy Outline -->
-                <h2 style="font-size: 1.8rem; color: var(--primary);">Privacy Policy Outline</h2>
-                <ol style="padding-left: 20px; color: var(--text-main);">
-                    <li style="margin-bottom: 10px;"><strong>1. Introduction:</strong> Who we are (SavvyFront) and policy scope.</li>
-                    <li style="margin-bottom: 10px;"><strong>2. Information We Collect:</strong> Website data, Service data (via Blesta), Infrastructure metrics.</li>
-                    <li style="margin-bottom: 10px;"><strong>3. How We Use Your Information:</strong> Provisioning (Proxmox API), Payment processing, Support.</li>
-                    <li style="margin-bottom: 10px;"><strong>4. Data Sharing and Disclosure.</strong></li>
-                    <li style="margin-bottom: 10px;"><strong>5. Data Security Measures.</strong></li>
-                    <li style="margin-bottom: 10px;"><strong>6. Your Rights (GDPR/UK Focus):</strong> Access, rectification, erasure.</li>
-                </ol>
-            </section>
-        </div>
-    </main>
+## 1. Introduction
+This policy applies to all users of the SavvyFront website and our hosting clients. By using our Services, you agree to the practices described in this Policy.
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h4>SavvyFront</h4>
-                    <p>Norwich-based hosting engineered for resilience.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <a href="differentiators.html">About Our Stack</a>
-                    <a href="legal.html">Legal & Privacy</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Client Area</h4>
-                    <a href="login.html">Login</a>
-                    <a href="products.html">Order New Service</a>
-                </div>
-            </div>
-            <div class="copyright">
-                &copy; 2026 SavvyFront. All rights reserved.
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+## 2. Information We Collect
+We collect information necessary to provide and manage our high-availability hosting services:
+
+2.1. **Data Collected via Website:** When you browse our site, we may collect anonymized usage data (if analytics are enabled) and any personal data you voluntarily submit via contact or inquiry forms (e.g., name, email).
+
+2.2. **Data Collected via Blesta/Service:** To provision and manage your VPS, our chosen billing platform, Blesta, will process:
+    *   Account Data: Your name, email address, and contact details.
+    *   Billing Data: Payment information is primarily handled by Blesta and associated payment gateways; we do not store full payment card details.
+
+2.3. **Data from Infrastructure:** Basic, anonymized resource usage metrics (CPU load, RAM utilization) are collected from the Proxmox and Ceph cluster management tools solely for cluster health monitoring and capacity planning.
+
+## 3. How We Use Your Information
+We use the collected information to:
+*   Provide the Service: Provisioning and managing your virtual machine using the Proxmox API integration linked to Blesta.
+*   Process Payments: Facilitating billing and invoicing through the Blesta system.
+*   Support: Responding to support requests related to your service or account.
+
+## 4. Data Sharing and Disclosure
+We share information only as necessary:
+*   **Subprocessors:** We share necessary data with critical third-party services required for operation, primarily Blesta and our payment gateway processor.
+*   **Legal Requirements:** We may disclose information if required to do so by law or in response to valid requests by public authorities (e.g., court orders).
+
+## 5. Data Security
+We are committed to protecting your data. While our underlying cluster infrastructure (Proxmox/Ceph) is hardened for maximum resilience, we implement robust security measures around our management interfaces (Blesta, monitoring tools) to protect account and billing information from unauthorized access.
+
+## 6. Your Rights (GDPR/UK Focus)
+In line with UK/EU data protection regulations, you have the right to: access the personal data we hold about you, request correction of inaccurate data, and request erasure of your data (subject to legal and operational requirements, such as retaining records for tax/billing).
+
+---
+***LEGAL WARNING: This is a draft outline. You must consult a qualified legal professional to draft the final, binding Privacy Policy document.***
