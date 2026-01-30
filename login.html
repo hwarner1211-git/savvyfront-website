@@ -3,41 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Login</title>
+    <title>Client Login - SavvyFront</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Savvy<span>Front</span></a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="products.html">Products</a>
                 <a href="differentiators.html">Why Us</a>
-                <a href="legal.html">Legal</a>
-                <a href="login.html">Client Login</a>
+                <a href="login.html" class="active">Login</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <section>
-                <h2>Client & Billing Portal</h2>
-                <p>Access your services, manage payments, and view invoices securely via your private Blesta portal.</p>
+        <div class="container" style="padding-top: 80px; text-align: center;">
+            <div style="max-width: 500px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <h1 style="font-size: 2rem; margin-bottom: 20px;">Client Portal</h1>
+                <p style="margin-bottom: 40px; color: var(--text-light);">Access your services, manage payments, and view invoices securely via your private portal.</p>
                 
-                <div style="text-align: center; margin: 40px 0;">
-                    <h3>Login</h3>
-                    <p>Click the button below to be securely redirected to your dedicated SavvyFront client area.</p>
-                    <a href="[PLACEHOLDER_BLESTA_URL]/index.php?/client/login" class="button primary-button">Login to Client Area</a>
-                    <p style="margin-top: 20px; font-size: 0.9em;"><em>Note: Please bookmark this link for future access.</em></p>
-                </div>
-            </section>
+                <a href="[PLACEHOLDER_BLESTA_URL]/index.php?/client/login" class="button primary-button" style="width: 100%; display: block; margin-bottom: 20px;">Login to Client Area</a>
+                
+                <p style="font-size: 0.9rem; color: #94a3b8;">
+                    <em>Please bookmark the portal link for future access.</em>
+                </p>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            &copy; 2026 SavvyFront. Built for Resilience.
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>SavvyFront</h4>
+                    <p>Norwich-based hosting engineered for resilience.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="differentiators.html">About Our Stack</a>
+                    <a href="legal.html">Legal & Privacy</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Client Area</h4>
+                    <a href="login.html">Login</a>
+                    <a href="products.html">Order New Service</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 SavvyFront. All rights reserved.
+            </div>
         </div>
     </footer>
 </body>

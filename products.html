@@ -3,91 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SavvyFront - Packages & Pricing</title>
+    <title>SavvyFront - Packages</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Savvy<span>Front</span></a>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
+                <a href="products.html" class="active">Products</a>
                 <a href="differentiators.html">Why Us</a>
-                <a href="legal.html">Legal</a>
-                <a href="login.html">Client Login</a>
+                <a href="login.html">Login</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <section>
-                <h2>Our Resilient Hosting Packages</h2>
-                <p>Choose the foundation that matches your workload. All tiers are powered by our Proxmox/Ceph cluster for superior uptime.</p>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tier Name</th>
-                            <th>CPU Cores</th>
-                            <th>RAM (GB)</th>
-                            <th>Storage (NVMe SSD)</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Sentinel</strong></td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>50 GB</td>
-                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_SENTINEL]" class="button primary-button">Order Now</a></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Guardian</strong></td>
-                            <td>2</td>
-                            <td>4</td>
-                            <td>100 GB</td>
-                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_GUARDIAN]" class="button primary-button">Order Now</a></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Bastion</strong></td>
-                            <td>4</td>
-                            <td>8</td>
-                            <td>200 GB</td>
-                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_BASTION]" class="button primary-button">Order Now</a></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Redoubt</strong></td>
-                            <td>8</td>
-                            <td>16</td>
-                            <td>400 GB</td>
-                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_REDOUBT]" class="button primary-button">Order Now</a></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Citadel</strong></td>
-                            <td>16</td>
-                            <td>32</td>
-                            <td>800 GB</td>
-                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_CITADEL]" class="button primary-button">Order Now</a></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Fortress</strong></td>
-                            <td>32</td>
-                            <td>64</td>
-                            <td>1600 GB</td>
-                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_FORTRESS]" class="button primary-button">Order Now</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>Pricing for these packages will be managed via your Blesta client portal upon checkout.</p>
-            </section>
+        <div class="container" style="padding-top: 60px;">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
+                <h1 style="color: var(--primary); margin-bottom: 20px;">Resilient VPS Hosting</h1>
+                <p style="font-size: 1.2rem; color: var(--text-light);">Choose the power you need. Every plan runs on our high-availability Proxmox/Ceph cluster.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Tier 1 -->
+                <div class="pricing-card">
+                    <h3>Sentinel</h3>
+                    <div class="cores">1 <span>vCore</span></div>
+                    <ul class="specs">
+                        <li><strong>2 GB</strong> RAM</li>
+                        <li><strong>50 GB</strong> NVMe Storage</li>
+                        <li>Unmetered Traffic</li>
+                    </ul>
+                    <a href="[PLACEHOLDER_BLESTA_ORDER_URL_SENTINEL]" class="button primary-button" style="width: 100%;">Configure</a>
+                </div>
+
+                <!-- Tier 2 -->
+                <div class="pricing-card">
+                    <h3>Guardian</h3>
+                    <div class="cores">2 <span>vCores</span></div>
+                    <ul class="specs">
+                        <li><strong>4 GB</strong> RAM</li>
+                        <li><strong>100 GB</strong> NVMe Storage</li>
+                        <li>Unmetered Traffic</li>
+                    </ul>
+                    <a href="[PLACEHOLDER_BLESTA_ORDER_URL_GUARDIAN]" class="button primary-button" style="width: 100%;">Configure</a>
+                </div>
+
+                <!-- Tier 3 (Highlighted) -->
+                <div class="pricing-card highlight">
+                    <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--accent); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: bold;">POPULAR</div>
+                    <h3>Bastion</h3>
+                    <div class="cores">4 <span>vCores</span></div>
+                    <ul class="specs">
+                        <li><strong>8 GB</strong> RAM</li>
+                        <li><strong>200 GB</strong> NVMe Storage</li>
+                        <li>Unmetered Traffic</li>
+                    </ul>
+                    <a href="[PLACEHOLDER_BLESTA_ORDER_URL_BASTION]" class="button primary-button" style="width: 100%;">Configure</a>
+                </div>
+
+                <!-- Tier 4 -->
+                <div class="pricing-card">
+                    <h3>Redoubt</h3>
+                    <div class="cores">8 <span>vCores</span></div>
+                    <ul class="specs">
+                        <li><strong>16 GB</strong> RAM</li>
+                        <li><strong>400 GB</strong> NVMe Storage</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="[PLACEHOLDER_BLESTA_ORDER_URL_REDOUBT]" class="button primary-button" style="width: 100%;">Configure</a>
+                </div>
+
+                <!-- Tier 5 -->
+                <div class="pricing-card">
+                    <h3>Citadel</h3>
+                    <div class="cores">16 <span>vCores</span></div>
+                    <ul class="specs">
+                        <li><strong>32 GB</strong> RAM</li>
+                        <li><strong>800 GB</strong> NVMe Storage</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="[PLACEHOLDER_BLESTA_ORDER_URL_CITADEL]" class="button primary-button" style="width: 100%;">Configure</a>
+                </div>
+
+                <!-- Tier 6 -->
+                <div class="pricing-card">
+                    <h3>Fortress</h3>
+                    <div class="cores">32 <span>vCores</span></div>
+                    <ul class="specs">
+                        <li><strong>64 GB</strong> RAM</li>
+                        <li><strong>1.6 TB</strong> NVMe Storage</li>
+                        <li>Dedicated Account Mgr</li>
+                    </ul>
+                    <a href="[PLACEHOLDER_BLESTA_ORDER_URL_FORTRESS]" class="button primary-button" style="width: 100%;">Configure</a>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            &copy; 2026 SavvyFront. Built for Resilience.
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>SavvyFront</h4>
+                    <p>Norwich-based hosting engineered for resilience.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="differentiators.html">About Our Stack</a>
+                    <a href="legal.html">Legal & Privacy</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Client Area</h4>
+                    <a href="login.html">Login</a>
+                    <a href="products.html">Order New Service</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 SavvyFront. All rights reserved.
+            </div>
         </div>
     </footer>
 </body>

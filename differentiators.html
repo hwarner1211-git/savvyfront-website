@@ -8,65 +8,83 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Savvy<span>Front</span></a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="products.html">Products</a>
-                <a href="differentiators.html">Why Us</a>
-                <a href="legal.html">Legal</a>
-                <a href="login.html">Client Login</a>
+                <a href="differentiators.html" class="active">Why Us</a>
+                <a href="login.html">Login</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <section>
-                <h2>Beyond the Hype: What Real Uptime Looks Like</h2>
-                <p>When you choose hosting, you’re choosing the foundation your business runs on. Most providers offer standard VPS configurations where your service lives on a single physical machine. If that machine has a network card failure, power issue, or disk fault, your service goes down until it's manually restored.</p>
-                
-                <p><strong>SavvyFront is built on a different philosophy: Redundancy as default.</strong></p>
+        <div class="container" style="padding-top: 60px;">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
+                <h1 style="color: var(--primary);">Beyond the Hype</h1>
+                <p style="font-size: 1.25rem; color: var(--text-light); margin-top: 20px;">
+                    When you choose hosting, you’re choosing the foundation your business runs on. Here is why our Proxmox/Ceph cluster beats the standard single-server VPS.
+                </p>
+            </div>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Feature</th>
-                            <th>Standard Hosting (Single Server)</th>
-                            <th>SavvyFront (Proxmox/Ceph Cluster)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Hardware Dependency</strong></td>
-                            <td>High. One failing drive or PSU means downtime.</td>
-                            <td>Low. Services instantly migrate to healthy nodes.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Data Protection</strong></td>
-                            <td>Basic RAID, susceptible to failure scenarios.</td>
-                            <td>Ceph storage actively mirrors data across multiple independent machines.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Performance Consistency</strong></td>
-                            <td>Can suffer during hardware maintenance or neighbor issues.</td>
-                            <td>Consistent high performance due to workload balancing across the cluster.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Upgrade Path</strong></td>
-                            <td>Requires planned maintenance window and migration downtime.</td>
-                            <td>Seamless live migration. We can upgrade hardware components without you ever noticing.</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <h3 style="border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 10px;">Hardware Dependency</h3>
+                    <p style="margin-top: 15px;"><strong>Standard VPS:</strong> If the physical server's PSU or motherboard fails, your site is down until a technician manually fixes it.</p>
+                    <hr style="border: 0; border-top: 1px solid var(--border); margin: 15px 0;">
+                    <p style="color: var(--primary);"><strong>SavvyFront:</strong> Low dependency. Your VM is instantly restarted on a healthy node if hardware fails.</p>
+                </div>
 
-                <p><strong>The Bottom Line:</strong> We use the same battle-tested, open-source technology that powers massive cloud infrastructures to deliver predictable, robust performance for your business applications.</p>
-            </section>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <h3 style="border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 10px;">Data Protection</h3>
+                    <p style="margin-top: 15px;"><strong>Standard VPS:</strong> Often uses basic RAID. A double-disk failure or controller failure can mean total data loss.</p>
+                    <hr style="border: 0; border-top: 1px solid var(--border); margin: 15px 0;">
+                    <p style="color: var(--primary);"><strong>SavvyFront:</strong> Ceph storage mirrors data chunks across multiple independent machines. It heals itself automatically.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <h3 style="border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 10px;">Maintenance</h3>
+                    <p style="margin-top: 15px;"><strong>Standard VPS:</strong> "Planned Maintenance" windows often mean forced downtime for upgrades.</p>
+                    <hr style="border: 0; border-top: 1px solid var(--border); margin: 15px 0;">
+                    <p style="color: var(--primary);"><strong>SavvyFront:</strong> Seamless live migration. We move your running VM to another node to patch hardware without you noticing.</p>
+                </div>
+            </div>
+
+            <div style="background: var(--primary); color: white; padding: 40px; border-radius: 12px; margin-top: 60px; text-align: center;">
+                <h2 style="color: white; border: none; margin-top: 0;">The Bottom Line</h2>
+                <p style="font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto;">
+                    We use the same battle-tested, open-source technology that powers massive cloud infrastructures to deliver predictable, robust performance for your business applications.
+                </p>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            &copy; 2026 SavvyFront. Built for Resilience.
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>SavvyFront</h4>
+                    <p>Norwich-based hosting engineered for resilience.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="differentiators.html">About Our Stack</a>
+                    <a href="legal.html">Legal & Privacy</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Client Area</h4>
+                    <a href="login.html">Login</a>
+                    <a href="products.html">Order New Service</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 SavvyFront. All rights reserved.
+            </div>
         </div>
     </footer>
 </body>
