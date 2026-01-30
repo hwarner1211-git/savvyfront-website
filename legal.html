@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavvyFront - Legal Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="differentiators.html">Why Us</a>
+                <a href="legal.html">Legal</a>
+                <a href="login.html">Client Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Legal Framework & Compliance</h2>
+                
+                <p><strong>IMPORTANT:</strong> The documents below are structural outlines for planning purposes only. They must be reviewed and finalized by a qualified legal professional to ensure compliance with all relevant laws (especially GDPR/UK laws, given your location and travel).</p>
+
+                <!-- TOS Outline -->
+                <h3 style="color: var(--color-primary);">Terms of Service (TOS) Outline</h3>
+                <ol>
+                    <li><strong>Introduction & Acceptance:</strong> Agreement to these terms.
+    *   Definition of Services (VPS Hosting on Proxmox/Ceph).
+    *   Acceptable Use Policy (AUP) - <em>Crucial section for what users cannot do (e.g., spam, illegal activity, high resource abuse).</em></li>
+                    <li><strong>Service Provision & Uptime:</strong>
+    *   Description of the clustered architecture (mentioning Proxmox/Ceph briefly as the basis for reliability).
+    *   Uptime Guarantee/SLA (Referencing the Blesta configuration).
+    *   Limitations of Guarantees (e.g., maintenance windows, Force Majeure).</li>
+                    <li><strong>Billing, Payments, and Cancellations:</strong>
+    *   Pricing structure overview (referencing tiers).
+    *   Payment terms (Net terms, accepted methods—likely linked to Blesta).
+    *   Cancellation policy (Refund window, data deletion upon termination).</li>
+                    <li><strong>Data Responsibility & Backups:</strong>
+    *   Customer Responsibility: User retains full responsibility for their data content and configuration.
+    *   Backup Policy: State clearly if <em>you</em> provide backups (unlikely for budget VPS) or if the customer must manage them using the underlying Ceph storage resilience.</li>
+                    <li><strong>Limitation of Liability & Indemnification:</strong>
+    *   Standard clauses limiting your liability for customer actions or data loss outside the scope of your explicit SLA.</li>
+                    <li><strong>Termination of Service:</strong>
+    *   Conditions under which SavvyFront may suspend or terminate service (e.g., AUP violations, non-payment).</li>
+                </ol>
+
+                <!-- Privacy Policy Outline -->
+                <h3 style="color: var(--color-primary);">Privacy Policy Outline</h3>
+                <ol>
+                    <li><strong>Introduction:</strong>
+    *   Who we are (SavvyFront) and what this policy covers.</li>
+                    <li><strong>Information We Collect:</strong>
+    *   <strong>Data Collected via Website:</strong> Browsing data (cookies, analytics - if used), contact forms.
+    *   <strong>Data Collected via Blesta/Service:</strong> Name, email, billing address, payment tokenization status (Blesta handles card data, you hold account data).
+    *   <strong>Data from Infrastructure:</strong> Basic server usage metrics (CPU/RAM load for Proxmox monitoring).</li>
+                    <li><strong>How We Use Your Information:</strong>
+    *   To provide the service (provisioning via Proxmox API).
+    *   To process payments (via Blesta integration).
+    *   For customer support.</li>
+                    <li><strong>Data Sharing and Disclosure:</strong>
+    *   Sharing with necessary subprocessors (e.g., Blesta itself, perhaps payment gateways).
+    *   Legal requirements disclosure.</li>
+                    <li><strong>Data Security:</strong>
+    *   Measures taken to secure data (mentioning infrastructure hardening efforts).</li>
+                    <li><strong>Your Rights (GDPR/UK Focus):</strong>
+    *   Right to access, rectification, erasure ("right to be forgotten").</li>
+                </ol>
+
+                <em>***LEGAL WARNING: This outline is for structural planning only. You must consult a legal professional to draft binding TOS and Privacy Policy documents.***</em>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 SavvyFront. Built for Resilience.
+        </div>
+    </footer>
+</body>
+</html>

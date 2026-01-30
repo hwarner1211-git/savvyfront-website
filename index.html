@@ -1,17 +1,360 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SavvyFront Website</title>
-    <style>
-        body { font-family: sans-serif; background-color: #f4f4f9; color: #333; text-align: center; padding: 50px; }
-        h1 { color: #007bff; }
-    </style>
+    <title>SavvyFront - Hosting That Doesn't Quit</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>SavvyFront Site is Live!</h1>
-    <p>This content is being served from the Nginx container via a Git-Sync mechanism on Unraid.</p>
-    <p>Future updates will sync automatically.</p>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="differentiators.html">Why Us</a>
+                <a href="legal.html">Legal</a>
+                <a href="login.html">Client Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero-section">
+                <h1>Hosting That Doesn't Quit.</h1>
+                <p class="subheadline">Stop worrying about downtime. Our foundation is built to survive hardware failure.</p>
+            </section>
+
+            <section id="value-prop">
+                <h3>The SavvyFront Difference: Infrastructure You Can Trust</h3>
+                <p>Most providers rely on standard single-server setups where one hardware failure means an outage. We engineered SavvyFront differently. We leverage industrial-strength, open-source technology—<strong>Proxmox Virtualization and Ceph Distributed Storage</strong>—to create a truly resilient cluster.</p>
+                
+                <p><strong>What this means for you:</strong></p>
+                <ul>
+                    <li><strong>No Single Point of Failure:</strong> Your services run across multiple physical machines. If one fails, the others instantly take over the load.</li>
+                    <li><strong>Data Integrity:</strong> Ceph actively mirrors your data across the cluster, protecting you from disk failure without sacrificing performance.</li>
+                    <li><strong>True High Availability:</strong> We build our platform on the same technology used by major enterprises, making maximum uptime the default, not an expensive add-on.</li>
+                </ul>
+            </section>
+
+            <section id="cta">
+                <h3>Ready for Reliability?</h3>
+                <p>Stop shopping for features and start investing in stability. Explore our hosting packages, built on the resilient foundation we use internally. Simple plans, serious uptime.</p>
+                <a href="products.html" class="button primary-button">View Our Packages & Pricing</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 SavvyFront. Built for Resilience.
+        </div>
+    </footer>
+</body>
+</html>
+***
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavvyFront - Packages & Pricing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="differentiators.html">Why Us</a>
+                <a href="legal.html">Legal</a>
+                <a href="login.html">Client Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Our Resilient Hosting Packages</h2>
+                <p>Choose the foundation that matches your workload. All tiers are powered by our Proxmox/Ceph cluster for superior uptime.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tier Name</th>
+                            <th>CPU Cores</th>
+                            <th>RAM (GB)</th>
+                            <th>Storage (NVMe SSD)</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Sentinel</strong></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>50 GB</td>
+                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_SENTINEL]" class="button primary-button">Order Now</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Guardian</strong></td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>100 GB</td>
+                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_GUARDIAN]" class="button primary-button">Order Now</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bastion</strong></td>
+                            <td>4</td>
+                            <td>8</td>
+                            <td>200 GB</td>
+                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_BASTION]" class="button primary-button">Order Now</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Redoubt</strong></td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>400 GB</td>
+                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_REDOUBT]" class="button primary-button">Order Now</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Citadel</strong></td>
+                            <td>16</td>
+                            <td>32</td>
+                            <td>800 GB</td>
+                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_CITADEL]" class="button primary-button">Order Now</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fortress</strong></td>
+                            <td>32</td>
+                            <td>64</td>
+                            <td>1600 GB</td>
+                            <td><a href="[PLACEHOLDER_BLESTA_ORDER_URL_FORTRESS]" class="button primary-button">Order Now</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Pricing for these packages will be managed via your Blesta client portal upon checkout.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 SavvyFront. Built for Resilience.
+        </div>
+    </footer>
+</body>
+</html>
+***
+<!-- differentiators.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavvyFront - Why Choose Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="differentiators.html">Why Us</a>
+                <a href="legal.html">Legal</a>
+                <a href="login.html">Client Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Beyond the Hype: What Real Uptime Looks Like</h2>
+                <p>When you choose hosting, you’re choosing the foundation your business runs on. Most providers offer standard VPS configurations where your service lives on a single physical machine. If that machine has a network card failure, power issue, or disk fault, your service goes down until it's manually restored.</p>
+                
+                <p><strong>SavvyFront is built on a different philosophy: Redundancy as default.</strong></p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Standard Hosting (Single Server)</th>
+                            <th>SavvyFront (Proxmox/Ceph Cluster)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Hardware Dependency</strong></td>
+                            <td>High. One failing drive or PSU means downtime.</td>
+                            <td>Low. Services instantly migrate to healthy nodes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Protection</strong></td>
+                            <td>Basic RAID, susceptible to failure scenarios.</td>
+                            <td>Ceph storage actively mirrors data across multiple independent machines.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Performance Consistency</strong></td>
+                            <td>Can suffer during hardware maintenance or neighbor issues.</td>
+                            <td>Consistent high performance due to workload balancing across the cluster.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Upgrade Path</strong></td>
+                            <td>Requires planned maintenance window and migration downtime.</td>
+                            <td>Seamless live migration. We can upgrade hardware components without you ever noticing.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>The Bottom Line:</strong> We use the same battle-tested, open-source technology that powers massive cloud infrastructures to deliver predictable, robust performance for your business applications.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 SavvyFront. Built for Resilience.
+        </div>
+    </footer>
+</body>
+</html>
+***
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="differentiators.html">Why Us</a>
+                <a href="legal.html">Legal</a>
+                <a href="login.html">Client Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Client & Billing Portal</h2>
+                <p>Access your services, manage payments, and view invoices securely via your private Blesta portal.</p>
+                
+                <div style="text-align: center; margin: 40px 0;">
+                    <h3>Login</h3>
+                    <p>Click the button below to be securely redirected to your dedicated SavvyFront client area.</p>
+                    <a href="[PLACEHOLDER_BLESTA_URL]/index.php?/client/login" class="button primary-button">Login to Client Area</a>
+                    <p style="margin-top: 20px; font-size: 0.9em;"><em>Note: Please bookmark this link for future access.</em></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 SavvyFront. Built for Resilience.
+        </div>
+    </footer>
+</body>
+</html>
+***
+<!-- legal.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavvyFront - Legal Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="differentiators.html">Why Us</a>
+                <a href="legal.html">Legal</a>
+                <a href="login.html">Client Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Legal Framework & Compliance</h2>
+                
+                <p><strong>IMPORTANT:</strong> The documents below are structural outlines for planning purposes only. They must be reviewed and finalized by a qualified legal professional to ensure compliance with all relevant laws (especially GDPR/UK laws, given your location and travel).</p>
+
+                <!-- TOS Outline -->
+                <h3 style="color: var(--color-primary);">Terms of Service (TOS) Outline</h3>
+                <ol>
+                    <li><strong>Introduction & Acceptance:</strong> Agreement to these terms.
+    *   Definition of Services (VPS Hosting on Proxmox/Ceph).
+    *   Acceptable Use Policy (AUP) - <em>Crucial section for what users cannot do (e.g., spam, illegal activity, high resource abuse).</em></li>
+                    <li><strong>Service Provision & Uptime:</strong>
+    *   Description of the clustered architecture (mentioning Proxmox/Ceph briefly as the basis for reliability).
+    *   Uptime Guarantee/SLA (Referencing the Blesta configuration).
+    *   Limitations of Guarantees (e.g., maintenance windows, Force Majeure).</li>
+                    <li><strong>Billing, Payments, and Cancellations:</strong>
+    *   Pricing structure overview (referencing tiers).
+    *   Payment terms (Net terms, accepted methods—likely linked to Blesta).
+    *   Cancellation policy (Refund window, data deletion upon termination).</li>
+                    <li><strong>Data Responsibility & Backups:</strong>
+    *   Customer Responsibility: User retains full responsibility for their data content and configuration.
+    *   Backup Policy: State clearly if <em>you</em> provide backups (unlikely for budget VPS) or if the customer must manage them using the underlying Ceph storage resilience.</li>
+                    <li><strong>Limitation of Liability & Indemnification:</strong>
+    *   Standard clauses limiting your liability for customer actions or data loss outside the scope of your explicit SLA.</li>
+                    <li><strong>Termination of Service:</strong>
+    *   Conditions under which SavvyFront may suspend or terminate service (e.g., AUP violations, non-payment).</li>
+                </ol>
+
+                <!-- Privacy Policy Outline -->
+                <h3 style="color: var(--color-primary);">Privacy Policy Outline</h3>
+                <ol>
+                    <li><strong>Introduction:</strong>
+    *   Who we are (SavvyFront) and what this policy covers.</li>
+                    <li><strong>Information We Collect:</strong>
+    *   <strong>Data Collected via Website:</strong> Browsing data (cookies, analytics - if used), contact forms.
+    *   <strong>Data Collected via Blesta/Service:</strong> Name, email, billing address, payment tokenization status (Blesta handles card data, you hold account data).
+    *   <strong>Data from Infrastructure:</strong> Basic server usage metrics (CPU/RAM load for Proxmox monitoring).</li>
+                    <li><strong>How We Use Your Information:</strong>
+    *   To provide the service (provisioning via Proxmox API).
+    *   To process payments (via Blesta integration).
+    *   For customer support.</li>
+                    <li><strong>Data Sharing and Disclosure:</strong>
+    *   Sharing with necessary subprocessors (e.g., Blesta itself, perhaps payment gateways).
+    *   Legal requirements disclosure.</li>
+                    <li><strong>Data Security:</strong>
+    *   Measures taken to secure data (mentioning infrastructure hardening efforts).</li>
+                    <li><strong>Your Rights (GDPR/UK Focus):</strong>
+    *   Right to access, rectification, erasure ("right to be forgotten").</li>
+                </ol>
+
+                <em>***LEGAL WARNING: This outline is for structural planning only. You must consult a legal professional to draft binding TOS and Privacy Policy documents.***</em>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 SavvyFront. Built for Resilience.
+        </div>
+    </footer>
 </body>
 </html>
